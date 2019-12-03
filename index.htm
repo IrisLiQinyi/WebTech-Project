@@ -6,17 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="format.css"/>
+    <style>
+        /* body {
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #beac74;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-size: 14.5pt;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px 0px 25px 100px;
+            /* margin-left: 100px;
+            margin-bottom: 75px; */
+        } */
+
+        #world {
+            margin:auto;
+        }
+
+        
+    </style>
 </head>
 
 <body>
-    <p>
-
-
-    </p>
-
     <div>
         <ul>
-            <hr>
+
             <li><a href="France.htm">France</a></li>
             <li><a href="Italy.htm">Italy</a></li>
             <li><a href="Japan.htm">Japan</a></li>
@@ -26,24 +50,30 @@
             <li> <a href="sitemap.htm">Site Map </a></li>
         </ul>
     </div>
+
+    
+
+    <div id="map">
+        <img id="world" src="image/map1.jpg" usemap="#WorldMap" alt="World Map" title="Cliclable Map"/>
+        <map name="WorldMap">
+            <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China"
+                target="_blank">
+            <area shape="rect" coords="390,230,410,240" href="Italy.htm" alt="Italian Film" title="Italy"
+                target="_blank">
+            <area shape="rect" coords="390,210,401,225" href="Germany.htm" alt="German Film" title="Germany"
+                target="_blank">
+            <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China"
+                target="_blank">
+            <area shape="rect" coords="650,220,660,240" href="Japan.htm" alt="Japanese Film" title="Japan"
+                target="_blank">
+        </map>
+    </div>
+    <br>
     <p>
         <audio controls>
             <source src="piano.mp3" type="audio/mp3" />
         </audio>
     </p>
-    <img src="image/map1.jpg" usemap="#WorldMap" alt="World Map" title="Cliclable Map" />
-    <map name="WorldMap">
-
-        <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China" target="_blank">
-
-        <area shape="rect" coords="390,230,410,240" href="Italy.htm" alt="Italian Film" title="Italy" target="_blank">
-        <area shape="rect" coords="390,210,401,225" href="Germany.htm" alt="German Film" title="Germany"
-            target="_blank">
-        <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China" target="_blank">
-    
-        <area shape="rect" coords="650,220,660,240" href="Japan.htm" alt="Japanese Film" title="Japan" target="_blank">
-    </map>
-
 
 </body>
 
