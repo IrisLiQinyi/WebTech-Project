@@ -14,7 +14,7 @@
     
     color: #beac74;
 } */
-div.con{
+/* div.con{
     margin-left: 100px;
     margin-right: 900px;
     color: aliceblue;
@@ -22,7 +22,7 @@ div.con{
     font-family: 'Times New Roman', Times, serif;
     margin-top:100px;
     position: absolute;
-}
+} */
 .con1{
     margin-left: 900px;
     margin-right: 100px;
@@ -62,10 +62,17 @@ div.con{
     margin-right: 500px;
 }
     </style>
+    <script type="text/javascript">
+        function change(){
+            a = document.getElementById("angel");
+            a.innerHTML = "The blue angel";
+            
+        }
+        </script>
 </head>
 
 <body>
-    <h1 id="t"><i>German Expressionism</i></h1>
+    <h1 id="t" onclick="change()" id="angel"><i>German Expressionism</i></h1>
     <p class="inc"><i>"The Blue Angel achieved its most electrifying effects through careful grading and construction. When Dietrich sings "Falling in Love Again" for the first time, the delivery is playful, flirtatious, and self-consciously seductive. - <b>Film historian Andrew Sarris</b></i></p>
 
     <div class="con">
