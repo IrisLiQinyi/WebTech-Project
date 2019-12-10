@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keyword" content="Classic film, Japanese film" />
+    <meta name="description" content="This is a website about Japanese classic film: Ikiru">
     <link rel="stylesheet" type="text/css" href="format.css" />
     <title>Japanese</title>
     <style>
@@ -33,8 +35,45 @@
         margin-top: 210px;
         position: absolute;
       }
+      #lyrics{
+        color: #beac74;
+        font-size: 20px;
+        /* margin-left: 100px; */
+        margin-top: 200px;
+      }
     </style>
     <script type="text/javascript">
+   
+    
+      // Animation
+      const slides = [
+        "Life is brief",
+        "all in love, maidens",
+        "before the crimson bloom",
+        "fades from your lips",
+        "before the tides of passion",
+        "cool within you",
+        "for there is no such thing",
+        "as tomorrow, after all"
+      ];
+      let i = 0;
+      let p =10;
+      function move() {
+        let song = document.getElementById("lyrics");
+        song.innerHTML=slides[i];
+        song.style.marginLeft=p+"px";
+        if (p>150){
+          p=10;
+          i++;
+        if (i == slides.length) {
+          i = 0;
+        }
+      } else {
+        p=p+1;
+      }
+        setTimeout("move()", 20);
+      }
+
       function change(){
           a = document.getElementById("iki");
           a.innerHTML = "Ikiru";
@@ -43,14 +82,17 @@
       </script>
   </head>
 
-  <body>
+  <body onload="move()">
         
     <p><h1 onclick="change()" id="iki"><i>Japan: Mix of styles</i></h1></p>
     <p id="song">
       <audio controls>
         <source src="Life.mp3" type="audio/mp3" /></audio
-      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> "Life is brief" - Ikiru</i>
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> <span id="lyrics">"Life is brief" - Ikiru</span></i>
     </p>
+    <!-- <p id="lyrics">
+      Text
+    </p> -->
     <div id="life">
       <img
         src="image/ikiru1.jpg"
@@ -102,6 +144,9 @@
     </p>
     <div class="b">
     <hr><a href="index.htm">Back to Homepage </a><br />
-    <a href="sitemap.htm">Site Map </a></div>
+    <a href="sitemap.htm">Site Map <br>
+      <a href = "credits.htm"> Credits </a><br>
+      <a href="contact.htm">Contact</a></div>
+    
   </body>
 </html>

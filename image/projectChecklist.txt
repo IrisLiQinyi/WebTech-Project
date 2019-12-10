@@ -1,0 +1,57 @@
+Objective of the website clearly evident upon entry and content supports the overall objective. (3 points)
+
+Use of a table. (3): Others.htm/film terms
+
+Use of a form. (3): contact.htm
+
+Images are appropriately used and adequate to support the website. (2)
+
+Images are defined using both ALT and TITLE. (2)
+
+Inclusion of an image map with at least two hot-spots on a single image. (4): index.htm
+
+Video included. (2): Germany.htm/ France.htm
+
+Audio file included on the home page with on/off controls. (2)
+
+Home page should be called “index.htm”. (1)
+
+Site-Map is included (see sample site map at https://www.apple.com/sitemap). (5) 
+
+Contact page included with a feedback form. (3)
+
+At least 2 of the 4 content pages are completed with informative and relevant content. (3): Germany.htm; Japan.htm; France.htm; Italy.htm
+
+Navigation bar is located in the same place on each page. (3): at the bottom of each website
+
+Links to the site-map page and the contact/feedback page must be available from the navigation bar or from links at the bottom of the page. (2)
+
+---------------------------------------------------------
+All the pages are hosted on the Web Host. Add the website domain to your LOW page. (6)
+
+Look and feel of the site (use of colors, fonts, backgrounds and consistency of styles across the pages) (7) – this is a relative assessment and is based on how well you have used the combination of external style sheet and internal styles to provide consistency across pages and to differentiate individual pages, in addition to the cheerful and welcoming feel that the website creates based on the use of colors, fonts and backgrounds.
+
+Attention to SEO principles. (3) :four content pages
+
+A separate credits page included if credits are due to sources for images, multimedia, or content. If no credits are due, then, add the following statement at the end of your site-map page “All intellectual property at this website is in the public domain or is the property of the site-owner”. (3):credit.htm
+
+Include the honor code at the end of the site-map page: “I, <your name>, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein.” (2)
+
+The 2 remaining content pages are completed and linked to the website. (2)
+--------------------------------------------------------------
+Final version in the hosted site and linked to LOW. (2)
+
+JavaScript is used for the following:
+Change the text on a page in response to the user’s action. (4): The <h1> title of the four main content pages
+
+Change the style of some element in response to the user’s action. (4): Contact.htm after clicking "submit", a thank you note will appear
+
+Validate a form. (5): others.htm/film terms
+
+Change images using mouse-over and mouse-out. (4): sitemap.htm mouse over film titles, picture will change
+
+Present a slide-show. (5): index.htm, changing posters
+
+Animate something (anything, not including the slide-show) or add some other functionality to the page besides what is listed above. (5): Japan.htm, lyrics of Ikiru
+
+Some JQuery elements are present on the website. (4): credit.htm button "click me".

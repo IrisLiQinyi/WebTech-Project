@@ -6,31 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Site Map</title>
+    <link rel="stylesheet" type="text/css" href="format.css"/>
     <style>
-        li a {
-            text-decoration-style: none;
-        }
+        
+        body{
+        /* color: #beac74; */
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15pt;
+        text-align: center;
+    }
+    ul{
+       padding-left: 310px;
+    }
     </style>
+    <script>
+    function changeImage(ID){
+       let recog= document.getElementById(ID);
+       let pic = document.getElementById("pic");
+       if(ID=="site_blue"){
+          pic.width="800";
+          pic.src="image/Blue2.jpg";
+          
+        }
+        else if(ID=="site_bike"){
+            pic.width="800";
+            pic.src="image/bike3.jpg";
+        }
+        else if(ID=="site_blows"){
+            pic.width="800";
+            pic.src="image/four_2.jpg";
+        }
+        else if(ID=="site_ikiru"){
+            pic.width="800";
+            pic.src="image/ikiru3.jpg";
+        }
+       
+    }
+    function changeBack(){
+        let pic= document.getElementById("pic");
+        pic.src="image/background2.jpg";
+        pic.width="1503";
+
+    }
+    </script>
 </head>
 
 <body>
-    <h3>Movie List</h3>
+    <h1>Movie List</h1>
     <ul>
-        <li><a href="Germany.htm">The Blue Angel</a></li>
-        <li><a href="Italy.htm">Bicycle Thieves</a></li>
-        <li><a href="France.htm">400 Blows</a></li>
-        <li><a href="Japan.htm">Ikiru</a></li>
+        <li ><a href="Germany.htm" onmouseover="changeImage(this.id)" onmouseout="changeBack(this.id)" id="site_blue">The Blue Angel</a></li>
+        <li><a href="Italy.htm" onmouseover="changeImage(this.id)" onmouseout="changeBack(this.id)" id="site_bike">Bicycle Thieves</a></li>
+        <li><a href="France.htm" onmouseover="changeImage(this.id)" onmouseout="changeBack(this.id)" id="site_blows">400 Blows</a></li>
+        <li><a href="Japan.htm" onmouseover="changeImage(this.id)" onmouseout="changeBack(this.id)" id="site_ikiru">Ikiru</a></li>
     </ul>
     <div>
-        <img src="image/background2.jpg" alt="background image" title="The Blue Angel" width="1503" />
+        <img src="image/background2.jpg" alt="background image" title="The Blue Angel" width="1503" id="pic"/>
     </div>
+    
     <br>
     <h3><a href="contact.htm">Contact Us</a></h3>
     <br>
     <h3><a href="Others.htm">Professional Terms</a></h3>
     <br>
     <h3><a href="index.htm">Home Page</a></h3>
-    <p>"I, Iris Li, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein." </p>
+    <div class="b">
+            <hr>
+                    <a href="sitemap.htm">Site Map </a> </a>
+            
+            
+    <p>"I, Iris Li, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein." </p></div>
+
 </body>
 
 </html>

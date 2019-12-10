@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="format.css"/>
+    <link rel="stylesheet" type="text/css" href="format.css" />
     <style>
-        /* body {
+      /* body {
             background-color: black;
         }
 
@@ -29,56 +28,139 @@
             margin-bottom: 75px;
         } */
 
-        #world {
-            margin:auto;
-        }
-
-        
+      #world {
+        /* margin-left: auto;
+          margin-right: auto; */
+      }
+      #map{
+          /* margin-left: auto;
+          margin-right: auto; */
+          text-align: center;
+      }
+      #film{
+          
+          height: 500px;
+          
+      }
+      #music{
+          margin-left: 600px;
+      }
     </style>
-</head>
+    <script>
+      const slides = [
+        "image/classic.jpg",
+        "image/classic1.jpg",
+        "image/classic2.jpg",
+        "image/classic3.jpg",
+        "image/classic4.jpg",
+        "image/classic5.jpg"
+      ];
+      let i = 0;
+      let a = 5;
+    //   slideshow function
+      function slideshow() {
+        let film = document.getElementById("film");
+        if (i == slides.length) {
+          i = 0;
+        }
+        else if (a > 1200){
+            a = 5;
+        }
+        film.src = slides[i];
+         
+        film.style.marginLeft =  a + "px";
+        i++;
+        a = 200+ a;
+        setTimeout("slideshow()", 2000);
+      }
+    </script>
+  </head>
 
-<body>
+  <body onload="slideshow()">
+    <h1>Classic films</h1>
     <div>
-        <ul>
-
-            <li><a href="France.htm">France</a></li>
-            <li><a href="Italy.htm">Italy</a></li>
-            <li><a href="Japan.htm">Japan</a></li>
-            <li><a href="Germany.htm">Germany</a></li>
-            <li><a href="Others.htm">Others</a></li>
-            <li><a href="contact.htm">Contact Us</a></li>
-            <li> <a href="sitemap.htm">Site Map </a></li>
-            <li> <a href="credits.htm">Credits </a></li>
-        </ul>
+      <ul>
+        <li><a href="France.htm">France</a></li>
+        <li><a href="Italy.htm">Italy</a></li>
+        <li><a href="Japan.htm">Japan</a></li>
+        <li><a href="Germany.htm">Germany</a></li>
+        <li><a href="Others.htm">Others</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+        <li><a href="sitemap.htm">Site Map </a></li>
+        <li><a href="credits.htm">Credits </a></li>
+      </ul>
     </div>
-
-    
 
     <div id="map">
-        <img id="world" src="image/map1.jpg" usemap="#WorldMap" alt="World Map" title="Cliclable Map"/>
-        <map name="WorldMap">
-            <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China"
-                target="_blank">
-            <area shape="rect" coords="390,230,410,240" href="Italy.htm" alt="Italian Film" title="Italy"
-                target="_blank">
-            <area shape="rect" coords="390,210,401,225" href="Germany.htm" alt="German Film" title="Germany"
-                target="_blank">
-            <area shape="rect" coords="520,230,620,280" href="China.htm" alt="Chinese Film" title="China"
-                target="_blank">
-            <area shape="rect" coords="650,220,660,240" href="Japan.htm" alt="Japanese Film" title="Japan"
-                target="_blank">
-        </map>
+      <img
+        id="world"
+        src="image/map1.jpg"
+        usemap="#WorldMap"
+        alt="World Map"
+        title="Cliclable Map"
+      />
+      <map name="WorldMap">
+        <area
+          shape="rect"
+          coords="520,230,620,280"
+          href="China.htm"
+          alt="Chinese Film"
+          title="China"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="390,230,410,240"
+          href="Italy.htm"
+          alt="Italian Film"
+          title="Italy"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="390,210,401,225"
+          href="Germany.htm"
+          alt="German Film"
+          title="Germany"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="520,230,620,280"
+          href="China.htm"
+          alt="Chinese Film"
+          title="China"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="650,220,660,240"
+          href="Japan.htm"
+          alt="Japanese Film"
+          title="Japan"
+          target="_blank"
+        />
+      </map>
     </div>
-    <br>
+    <div>
+      <img
+        src="image/classic5.jpg"
+        alt="Slide Show of films"
+        title="Classic films"
+        id="film"
+      />
+    </div>
+    <br />
     <p>
-        <audio controls>
-            <source src="piano.mp3" type="audio/mp3" />
-        </audio>
+      <audio controls id="music">
+        <source src="piano.mp3" type="audio/mp3" />
+      </audio>
     </p>
-    <div ><hr>
-            <a href="C:\Babson\GitHub\Webtech\Classwork\low.htm">Link to MyWork</a>
+
+    <div class="b">
+      <hr>
+      <a href = "credits.htm"> Credits </a><br>
+      <a href="C:\Babson\GitHub\Webtech\Classwork\low.htm">Link to MyWork</a>
     </div>
-
-</body>
-
+  </body>
 </html>
